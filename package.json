@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "GymPass style app.",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start:dev": "tsx watch src/server.ts",
     "start": "node build/server.js",
@@ -31,12 +30,13 @@
     "vitest": "2.0.5"
   },
   "dependencies": {
+    "@fastify/jwt": "9.0.1",
     "@prisma/client": "5.19.1",
     "bcrypt": "5.1.1",
     "bcryptjs": "2.4.3",
     "dayjs": "1.11.13",
     "dotenv": "16.4.5",
-    "fastify": "4.28.1",
+    "fastify": "5.0.0",
     "zod": "3.23.8"
   }
 }
